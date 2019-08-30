@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class AdminService {
 
   constructor(private http: HttpClient) { }
-  baseUrl: string = 'http://192.168.4.98:3000/api/v1';  
+  baseUrl: string = 'https://fast-chamber-74548.herokuapp.com/api/v1';  
   
   login(data){
     return this.http.post<any>(this.baseUrl+'/oauth/token',data);  
